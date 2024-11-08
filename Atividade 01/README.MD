@@ -15,7 +15,7 @@ Esta página apresenta uma breve descrição sobre mim:
 - **Nome**: Thiago Meira
 - **Profissão**: Médico Veterinário, graduado pela Universidade Federal da Paraíba, e atualmente concluindo a graduação em Sistemas para Internet pela Uniesp.
 
-Além disso, um vídeo de apresentação está disponível nesta página.
+Além disso, um vídeo do youtube está integrado a página para exibição.
 
 #### 2. **Formação (formacao.html)**
 
