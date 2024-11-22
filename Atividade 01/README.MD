@@ -67,6 +67,7 @@ Cada tecnologia utilizada nos projetos do portfólio possui uma página própria
 - **HTML5**
 - **CSS3**
 - **Bootstrap 5**
+- **JavaScript**
 
 ### Instalação
 
