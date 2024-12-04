@@ -37,8 +37,10 @@ Atividade03/
 └── .gitignore
 
 ## Instalação
-Clone o repositório: git clone https://github.com/usuario/Atividade03.git
+Clone o repositório: git clone [https://github.com/usuario/Atividade03.git](https://github.com/thiaagomeira/mentoria_Iuul.git)
+
 Navegue até o diretório do projeto: cd Atividade03
+
 Instale as dependências: npm install e npm install -g typescript
 
 ## Execução
