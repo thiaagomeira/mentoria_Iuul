@@ -19,21 +19,37 @@ Conta Poupança: Simula operações básicas em uma conta poupança, como depós
 
 Atividade03/
 │
+
 ├── classes/
+
 │   ├── Cliente.ts
+
 │   ├── Conta.ts
+
 │   ├── ContaCorrente.ts
+
 │   ├── ContaPoupanca.ts
+
 │   ├── Endereco.ts
+
 │   ├── Funcionario.ts
+
 │
+
 ├── dist/
+
 │   └── (arquivos gerados pelo build)
+
 │
+
 ├── index.ts
+
 ├── tsconfig.json
+
 ├── package.json
+
 ├── README.md
+
 └── .gitignore
 
 ## Instalação
