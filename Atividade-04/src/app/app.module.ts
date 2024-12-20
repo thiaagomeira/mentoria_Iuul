@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CurrencyListComponent } from './components/currency-list/currency-list.component';
 import { ConversionFormComponent } from './components/conversion-form/conversion-form.component';
@@ -12,12 +13,18 @@ import { DropdownModule } from 'primeng/dropdown';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 
+const appRoutes: Routes = [
+  { path: 'converter', component: ConversionFormComponent },
+  { path: 'moedas', component: CurrencyListComponent },
+  { path: 'historico', component: ConversionHistoryComponent },
+  { path: '', redirectTo: '/converter', pathMatch: 'full' },
+];
+
 @NgModule({
   declarations: [
     AppComponent,
     CurrencyListComponent,
     ConversionFormComponent,
-    ConversionHistoryComponent
   ],
   imports: [
     BrowserModule,
@@ -27,9 +34,11 @@ import { InputTextModule } from 'primeng/inputtext';
     TableModule,
     DropdownModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    ConversionHistoryComponent,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
