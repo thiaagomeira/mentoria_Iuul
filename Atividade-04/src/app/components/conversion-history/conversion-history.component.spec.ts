@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConversionHistoryComponent } from './conversion-history.component';
+import { ConversionHistoryService } from './conversion-history.component';
 
 describe('ConversionHistoryComponent', () => {
-  let component: ConversionHistoryComponent;
-  let fixture: ComponentFixture<ConversionHistoryComponent>;
+  let component: ConversionHistoryService;
+  let fixture: ComponentFixture<ConversionHistoryService>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ConversionHistoryComponent ]
+      declarations: [ ConversionHistoryService ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ConversionHistoryComponent);
+    fixture = TestBed.createComponent(ConversionHistoryService);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

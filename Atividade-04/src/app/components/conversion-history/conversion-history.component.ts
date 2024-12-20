@@ -1,17 +1,26 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { TableModule } from 'primeng/table';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-conversion-history',
-  standalone: true,
-  imports: [CommonModule, TableModule],
-  templateUrl: './conversion-history.component.html',
-  styleUrls: ['./conversion-history.component.css'],
+interface Conversion {
+  date: string;
+  time: string;
+  from: string;
+  to: string;
+  amount: number;
+  result: number;
+  rate: number;
+}
+
+@Injectable({
+  providedIn: 'root',
 })
-export class ConversionHistoryComponent {
-  conversionHistory = [
-    { date: '2024-12-01', time: '10:00', from: 'USD', to: 'BRL', amount: 1000, result: 5000, rate: 5.0 },
-    { date: '2024-12-02', time: '11:30', from: 'EUR', to: 'USD', amount: 500, result: 550, rate: 1.1 },
-  ];
+export class ConversionHistoryService {
+  private conversionHistory: Conversion[] = [];
+
+  addConversion(conversion: Conversion) {
+    this.conversionHistory.push(conversion);
+  }
+
+  getConversionHistory(): Conversion[] {
+    return this.conversionHistory;
+  }
 }
